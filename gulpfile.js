@@ -6,7 +6,7 @@
  	gulp.task('sass', function() {
  	    gulp.src('./src/sass/*.sass')
  	        .pipe(sass()) // Using gulp-sass
- 	        .pipe(gulp.dest('./dist/css/'))
+ 	        .pipe(gulp.dest('./src/css/'))
  	        .pipe(browserSync.reload({
  	            stream: true
  	        }))
@@ -25,5 +25,6 @@
  	    gulp.watch('./src/sass/*.sass', ['sass']);
  	    // Обновляем браузер при любых изменениях в HTML или JS
  	    gulp.watch('./src/*.html', browserSync.reload);
+ 	    gulp.watch('./src/*.css', browserSync.reload);
  	    gulp.watch('./src/js/**/*.js', browserSync.reload);
  	});
