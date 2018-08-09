@@ -7,14 +7,13 @@ ol {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 100px;
-  width: 1140px;
   margin: 0 auto; }
   .header .header-block {
     display: flex;
-    justify-content: space-between;
-    width: 100%; }
+    width: 1140px;
+    justify-content: space-between; }
     .header .header-block .header-left {
       display: flex; }
       .header .header-block .header-left .logo-img {
