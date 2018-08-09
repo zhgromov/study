@@ -5,15 +5,15 @@
   height: 100px
   width: 1140px
   margin: 0 auto
-  background-color: blue
+  // background-color: blue
   .header-block
     display: flex
     justify-content: space-between
     width: 100%
-    background-color: yellow
+    // background-color: yellow
     .header-left
       display: flex
-      background-color: red
+      // background-color: red
       .logo-img
         width: 59px
         height: 51px
@@ -41,7 +41,7 @@
           margin-top: 32px
           margin-left: 37px
           padding-left: 16px
-          height: 38px
+          height: 37px
           border-radius: 3px 0 0 3px
           border: 1px solid #e6e6e6
           background-color: #cdcdcc
@@ -51,20 +51,28 @@
               color: #838383 
               margin-left: 8px
               margin-right: 8px
+              transition: 0.7s
           span
             color: #222222
             font-family: Lato
             font-size: 14px
             font-weight: 300
             line-height: 32px
+            transition: 0.7s
+            &:hover
+              color: #f16d7f 
+            &:hover + .fa-caret-down
+              color: #f16d7f 
         .search-form 
           display: flex
           align-items: center
           width: 317px
-          height: 38px
+          height: 37px
           margin-top: 32px
           border-radius: 0 3px 3px 0
-          border: 1px solid #e6e6e6
+          border-right: 1px solid #e6e6e6
+          border-top: 1px solid #e6e6e6
+          border-bottom: 1px solid #e6e6e6
           background-color: #ffffff
           input
             outline: none
@@ -72,17 +80,25 @@
             width: 100%
             padding-left: 16px
             padding-right: 16px
-          .fa-search
+          a .fa-search
             color: #a4a4a4
-            padding: 12px 11px 12px 11px
+            height: 100%
+            padding: 12px 11px 10px 11px
             border-left: 1px solid #e6e6e6
+            transition: 0.7s
             &:hover 
               color: #f16d7f
+              
+              
     .header-right
       display: flex
       width: 188px
-      
       background-color: green
+      .cart-img
+        margin-top: 40px
+        margin-right: 26px
+      .account-button
+        margin: 
   
             
        
