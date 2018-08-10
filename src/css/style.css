@@ -124,13 +124,13 @@ ol {
                   transition: 0.5s; }
                   .header .header-block .header-left .search-container .browse-button .header-dropdown ul li a:hover {
                     color: #f16d7f; }
-          .header .header-block .header-left .search-container .browse-button span {
-            color: #222222;
-            font-family: Lato;
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 32px;
-            transition: 0.5s; }
+        .header .header-block .header-left .search-container .browse-button-name {
+          color: #222222;
+          font-family: Lato;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 32px;
+          transition: 0.5s; }
         .header .header-block .header-left .search-container .search-form {
           display: flex;
           align-items: center;
