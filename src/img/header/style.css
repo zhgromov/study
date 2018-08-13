@@ -79,7 +79,7 @@ ol {
             border: 1px solid #ececec;
             background-color: #ffffff;
             z-index: 1; }
-            .header .header-block .header-left .search-container .browse-button .header-dropdown .header-dropdown-caret {
+            .header .header-block .header-left .search-container .browse-button .header-dropdown .header-dropdown-arrow {
               display: block;
               position: fixed;
               width: 15px;
@@ -215,43 +215,28 @@ nav {
       font-size: 14px;
       font-weight: 700;
       line-height: 26px;
-      text-transform: uppercase; }
-      nav .nav-bar .nav-bar-item a:hover ~ .nav-megamenu {
-        background-color: blue; }
-  nav .nav-megamenu {
+      text-transform: uppercase;
+      background-color: red; }
+  nav .navs-megamenu {
     display: flex;
     position: fixed;
-    margin-top: 45px;
-    margin-left: 165px;
+    margin-top: 65px;
+    margin-left: -100px;
     justify-content: space-between;
-    background-color: #ffffff;
     border: 1px solid #ececec;
-    border-radius: 5px;
-    z-index: 1; }
-    nav .nav-megamenu .nav-meganenu-caret {
-      position: fixed;
-      width: 10px;
-      height: 10px;
-      background-color: #ffffff;
-      margin-top: -7px;
-      margin-left: 55px;
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      -webkit-transform: rotate(-45deg);
-      border-top: 1px solid #ececec;
-      border-right: 1px solid #ececec; }
-    nav .nav-megamenu .nav-megamenu-item {
+    border-radius: 5px; }
+    nav .navs-megamenu .navs-megamenu-item {
       margin-left: 25px;
       margin-right: 25px;
       min-width: 230px; }
-      nav .nav-megamenu .nav-megamenu-item ul {
+      nav .navs-megamenu .navs-megamenu-item ul {
         list-style: none; }
-        nav .nav-megamenu .nav-megamenu-item ul .megamenu-li-title {
+        nav .navs-megamenu .navs-megamenu-item ul .megamenu-li-title {
           margin-top: 19px;
           margin-bottom: 16px;
           padding-bottom: 10px;
           border-bottom: 1px solid #ececec; }
-          nav .nav-megamenu .nav-megamenu-item ul .megamenu-li-title a {
+          nav .navs-megamenu .navs-megamenu-item ul .megamenu-li-title a {
             text-decoration: none;
             color: #232323;
             font-family: Lato;
@@ -260,12 +245,12 @@ nav {
             line-height: 32px;
             text-transform: uppercase;
             transition: 0.5s; }
-            nav .nav-megamenu .nav-megamenu-item ul .megamenu-li-title a:hover {
+            nav .navs-megamenu .navs-megamenu-item ul .megamenu-li-title a:hover {
               color: #f16d7f; }
-        nav .nav-megamenu .nav-megamenu-item ul li {
+        nav .navs-megamenu .navs-megamenu-item ul li {
           margin-bottom: 8px;
           padding-left: 7px; }
-          nav .nav-megamenu .nav-megamenu-item ul li a {
+          nav .navs-megamenu .navs-megamenu-item ul li a {
             color: #4f4f4f;
             font-family: Lato;
             font-size: 14px;
@@ -274,24 +259,29 @@ nav {
             letter-spacing: 0.35px;
             text-decoration: none;
             transition: 0.5s; }
-            nav .nav-megamenu .nav-megamenu-item ul li a:hover {
+            nav .navs-megamenu .navs-megamenu-item ul li a:hover {
               color: #f16d7f; }
-      nav .nav-megamenu .nav-megamenu-item .megamenu-offer {
-        display: flex;
-        justify-content: flex-end;
-        background-image: url("/img/nav/Layer_42.jpg");
-        background-size: cover;
-        width: 255px;
-        height: 118px;
-        margin-top: 57px; }
-        nav .nav-megamenu .nav-megamenu-item .megamenu-offer .megamenu-offer-text {
-          display: flex;
-          margin-top: 56px;
-          margin-right: 10px;
+      nav .navs-megamenu .navs-megamenu-item .megamenu-offer {
+        display: block;
+        position: relative;
+        margin-bottom: -205px; }
+        nav .navs-megamenu .navs-megamenu-item .megamenu-offer .megamenu-offer-text {
+          display: block;
+          position: relative;
+          z-index: 1;
+          margin-top: -65px;
+          padding-right: 10px;
+          text-align: right;
           color: #ffffff;
-          font-family: Lato;
+          font-family: Lato-Black;
           font-size: 22px;
-          font-weight: 600;
+          font-weight: 400;
           line-height: 28px;
           text-transform: uppercase;
           letter-spacing: 0.55px; }
+        nav .navs-megamenu .navs-megamenu-item .megamenu-offer .megamenu-offer-img {
+          display: block;
+          position: relative;
+          width: 255px;
+          height: 118px;
+          z-index: 0;margin-top: 30px; }
